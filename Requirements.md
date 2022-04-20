@@ -8,6 +8,10 @@ There are two types of requirements: core (those the team commits to meeting dur
 
 Every page in the site will include a navigation bar with links to all pages: Home, Learn (*stretch*), and Idea Generator.
 
+1. All pages will be usable on viewports wider than 400px
+1. The application will be fully navigable by keyboard
+1. All pages will maintain a [First Input Delay](https://web.dev/fid/) of less than 100ms on 4G networks, as measured by [Web Page Test](https://www.webpagetest.org)
+
 ## Home Page
 
 1. Contains a title
