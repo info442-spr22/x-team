@@ -2,19 +2,33 @@
 
 ## Types of Testing
 
-[TODO]
+This application will use manual acceptance testing. It will not use code reviews as there is only one developer. It will make use of automated unit tests with [Github Actions](https://github.com/features/actions) (*stretch goal*).
+
+The unit tests will test logic that shows quasi-random videos on home page (Home Page 5.1) and logic that handles idea generator form submission (Idea Generator 8, 9, 12)(*stretch goal*).
 
 ## Test Environments
 
-[TODO]
+Developers will do ad-hoc manual testing of their work on their local machines. All other testing will be done on code that has been deployed to our production environment on Netlify.
 
-### Supported OS/Browser Combinations
+## Supported OS/Browser Combinations
 
-[TODO]
+ - Chrome browser on MacOS (tested on a MacBook Air laptop)
+ - Edge browser on Windows (tested on a Surface Pro tablet)
+ - Firefox browser on Android (tested on a Samsung Galaxy S22 phone)
 
 ## Process
 
-[TODO]
+All feature work will be done on feature branches. After development is complete, the developer will open a Pull Request. There will be no code review on this Pull Request as there's only one developer on this team. Merging of a Pull Request will trigger a Github Action for unit tests (*stretch*). If the Action succeeds, a deploy to Netlify will be triggered.
+
+It is the developer's responsibility to ensure all parts of the merging and deployment process complete successfully for their Pull Requests. When process completes, the developer alerts the product designer that the feature has been deployed.
+
+After being alerted, the product designer will manually test the deploy. They will run manual performance testing using [Web Page Test](https://www.webpagetest.org) and manual acceptance testing using the script below on at least one of the supported OS/browser combinations.
+
+Each Friday during development, the project manager will run the acceptance testing script on all supported OS/browser combinations.
+
+## Defect Management
+
+If any defects are found during manual testing process, they will be brought to the project manager's attention by email. The project manager will determine whether to make a new issue to fix the problem or to ask the developer who wrote the original code to do a quick, immediate fix.
 
 ### Manual Acceptance Testing Script
 
@@ -32,6 +46,8 @@ Refresh the home page three times. Expect to see a different embedded video on e
 
 [TODO]
 
-## Defect Management
 
-[TODO]
+
+
+
+
